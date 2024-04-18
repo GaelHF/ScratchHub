@@ -2,6 +2,7 @@ from os import system
 system('pip install selenium')
 system('pip install webdriver_manager')
 system('pip install cleantext')
+system('pip install pygithub')
 system('cls')
 
 from selenium import webdriver
@@ -45,5 +46,7 @@ readme.write(f'![Logo](# {username}\'s Scratch Projects\n\n')
 for i in range(len(links)):
     print(f'{titles[i]}, {links[i]}')
     readme.write(f'[{titles[i]}]({links[i]})\n')
+print('DONE !\n\n\n')
+print('YOUR README.md FILE IS READY')
 readme.close()
 driver.close()
